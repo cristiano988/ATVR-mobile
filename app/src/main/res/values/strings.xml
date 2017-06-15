@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ATVR</string>
+
+    <string name="search_events">Search</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    
+    <string name="action_searching_event">Searching for events...</string>
+    <string name="action_searching_event_default"> </string>
+    <string name="action_searching_result_none">No competitions found. Please try again.</string>
+</resources>
