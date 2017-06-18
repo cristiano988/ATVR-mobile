@@ -1,12 +1,13 @@
 package com.opencvapp.crist.atvr;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.Toast;
 
 public class RefereeScore extends AppCompatActivity {
 
@@ -30,7 +31,21 @@ public class RefereeScore extends AppCompatActivity {
         unitNumber.setWrapSelectorWheel(true);
 
         decimalNumber.setMinValue(0);
-        decimalNumber.setMaxValue(10);
+        decimalNumber.setMaxValue(9);
         decimalNumber.setWrapSelectorWheel(true);
+
+        ((FloatingActionButton)findViewById(R.id.score_tec)).setOnClickListener(customOnClick);
     }
+
+    View.OnClickListener customOnClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            int unit = ((NumberPicker)findViewById(R.id.unitNumber)).getValue();
+            int decimal = ((NumberPicker)findViewById(R.id.decimalNumber)).getValue();
+
+            Toast.makeText(getApplicationContext(),String.valueOf(unit) + "," + String.valueOf(decimal) + "."
+                    ,Toast.LENGTH_SHORT).show();
+        }
+    };
 }
