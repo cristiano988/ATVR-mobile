@@ -106,7 +106,7 @@ public class TCVR extends AppCompatActivity {
 
         setContentView(R.layout.activity_tcvr);
 
-        startActivity(new Intent(getApplicationContext(),TechnicScore.class));
+        startActivity(new Intent(getApplicationContext(),CombatScore.class));
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);

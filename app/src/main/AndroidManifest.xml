@@ -29,8 +29,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".CombatScore"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_combat_score"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>
