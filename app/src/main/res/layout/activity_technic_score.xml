@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/activity_background"
     android:orientation="vertical"
-    tools:context="com.opencvapp.crist.atvr.RefereeScore">
+    tools:context="com.opencvapp.crist.atvr.TechnicScore">
 
     <TextView
         android:id="@+id/label_name"

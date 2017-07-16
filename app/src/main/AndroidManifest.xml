@@ -22,11 +22,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RefereeScore"
+            android:name=".TechnicScore"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_referee_score"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".CombatScore"
+            android:label="@string/title_activity_combat_score"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

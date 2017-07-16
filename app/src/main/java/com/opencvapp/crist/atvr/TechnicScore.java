@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
-public class RefereeScore extends AppCompatActivity {
+public class TechnicScore extends AppCompatActivity {
 
     private NumberPicker unitNumber;
     private NumberPicker decimalNumber;
@@ -20,7 +20,7 @@ public class RefereeScore extends AppCompatActivity {
 
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_referee_score);
+        setContentView(R.layout.activity_technic_score);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         unitNumber = (NumberPicker)findViewById(R.id.unitNumber);
