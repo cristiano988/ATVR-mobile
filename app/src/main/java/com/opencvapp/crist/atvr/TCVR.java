@@ -3,6 +3,7 @@ package com.opencvapp.crist.atvr;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -106,7 +107,16 @@ public class TCVR extends AppCompatActivity {
 
         setContentView(R.layout.activity_tcvr);
 
-        startActivity(new Intent(getApplicationContext(),CombatScore.class));
+        //startActivity(new Intent(getApplicationContext(),CombatScore.class));
+
+        // Exemplo de mensagem de confirmação
+        new AlertDialog.Builder(this)
+                .setTitle("Please Confirm")
+                .setMessage("Send Score?")
+                .setIcon(R.mipmap.ic_chest_b)
+                .setPositiveButton("Yes",null)
+                .setNegativeButton("No",null)
+                .show();
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
