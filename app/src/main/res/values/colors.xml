@@ -10,4 +10,5 @@
     <color name="main_text">#595a5b</color>
 
     <color name="button_ok_background">#40F540</color>
+    <color name="button_combat_background">#000000</color>
 </resources>
